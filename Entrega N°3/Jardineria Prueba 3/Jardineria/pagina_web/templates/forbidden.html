@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Prohibido</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8d7da;
+            color: #721c24;
+            font-size: 3em; /* Ajusta este valor para cambiar el tamaño de la fuente */
+        }
+        .container {
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 4em; /* Ajusta este valor para cambiar el tamaño del título */
+            margin-bottom: 0.5em;
+        }
+        .container p {
+            font-size: 2em; /* Ajusta este valor para cambiar el tamaño del párrafo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Acceso Prohibido</h1>
+        <p>No tienes permisos para acceder a esta página.</p>
+        <a href="{% url 'index' %}" class="btn btn-primary">Volver a la página de inicio</a>
+    </div>
+</body>
+</html>
